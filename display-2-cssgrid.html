@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: darkkhaki;
+        }
+        .container {
+            display: grid;
+            width: 200px;
+            height: 200px;
+            background-color: cadetblue;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+        .item {
+            background-color: papayawhip;
+        }
+        .container .item:nth-child(1) {
+            background-color: palevioletred;
+        }
+        .container .item:nth-child(2) {
+            grid-column: 2 /  3;
+            grid-row: 2 / 3;
+            background-color: palevioletred;
+        }
+        .container .item:nth-child(3) {
+            grid-column: 3 /  4;
+            grid-row: 3 / 4;
+            background-color: palevioletred;
+        }
+        .container .item:nth-child(4) {
+            grid-column: 4 /  5;
+            grid-row: 4 / 5;
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1 </div>
+        <div class="item">2 </div>
+        <div class="item">3 </div>
+        <div class="item">4 </div>
+    </div>
+</body>
+</html>

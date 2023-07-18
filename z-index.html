@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index y el contexto de apilamiento </title>
+    <style>
+        div {
+            position: absolute;
+        }
+        .red {
+            background-color: red;
+            height: 50px;
+            width: 50px;
+            z-index: 5;
+        }
+        .blue {
+            background-color: blue ;
+            height: 80px;
+            width: 80px;
+            z-index: 4;
+        }
+        .yellow {
+            background-color: yellow;
+            height: 70px;
+            width: 70px;
+            z-index: 6;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="red"> RED </div>
+        <div class="blue"> BLUE 
+            <div class="yellow"> YELLOW </div>
+        </div>
+    </section>
+</body>
+</html>

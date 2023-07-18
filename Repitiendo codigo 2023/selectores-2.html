@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores combinadores</title>
+    <style>
+        /* SELECTOR DE HIJO DESCENDIENTE: todos los p que estén dentro de div */
+        div p{ 
+            color: lime;
+        }
+
+        /* SELECTOR DE HIJO DIRECTO: */
+        div > div{
+            background-color: plum;
+        }
+        .es{
+            background-color: red;
+        }
+
+        /* SELECTOR DE ELEMENTO ADYACENTE: el section q está seguido de div */
+        div + section {
+            background-color: palevioletred;
+        }
+
+        /* SELECTOR GENERAL DE HERMANOS: el hermano que está despues de div. todos los hermanos p que están despues de div */
+        div ~ p{
+            color: powderblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>PLATZI</p>
+        <p>ES</p>
+        <p>INCREÍBLE</p>
+    </div>
+    <div>
+        <div>
+            <p>Platzi</p>
+            <div class="es">es</div>
+        </div>
+    </div>
+    <p>CLASE DE SELECTORES</p>
+    <p>CLASE DE SELECTORES</p>
+    <div>
+        MASTER
+    </div>
+    <section>
+        ES LO MEJOR
+    </section>
+</body>
+</html>
